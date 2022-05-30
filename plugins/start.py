@@ -115,17 +115,17 @@ async def start_command(client: Client, message: Message):
                 pass
     else:
         buttons = [
-            [InlineKeyboardButton("🔅 ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ 🔅", callback_data="about")],
+            [InlineKeyboardButton("⚙️ 𝐓𝐞𝐧𝐭𝐚𝐧𝐠 𝐆𝐮𝐞 ⚙️", callback_data="about")],
             [
-                InlineKeyboardButton("•ᴄʜᴀɴɴᴇʟ•", url=client.invitelink),
-                InlineKeyboardButton("•ɢʀᴜᴘ•", url=client.invitelink2),
+                InlineKeyboardButton("💢𝐂𝐇𝐀𝐍𝐍𝐄𝐋💢", url=client.invitelink),
+                InlineKeyboardButton("💢 𝐆𝐑𝐎𝐔𝐏  💢", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton("•ᴄʜᴀɴɴᴇʟ•", url=client.invitelink3),
-                InlineKeyboardButton("•ɢʀᴜᴘ•", url=client.invitelink4), 
+                InlineKeyboardButton("💢𝐂𝐇𝐀𝐍𝐍𝐄𝐋💢", url=client.invitelink3),
+                InlineKeyboardButton("💢 𝐆𝐑𝐎𝐔𝐏 💢", url=client.invitelink4), 
             ],  
             [
-                InlineKeyboardButton("🔅 ᴛᴜᴛᴜᴘ 🔅", callback_data="close"),
+                InlineKeyboardButton("🔥 𝐓𝐔𝐓𝐔𝐏 🔥", callback_data="close"),
             ],
         ]
         await message.reply_text(
@@ -152,19 +152,19 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton("•ᴄʜᴀɴɴᴇʟ•", url=client.invitelink), 
-            InlineKeyboardButton("•ɢʀᴜᴘ•", url=client.invitelink2),
+            InlineKeyboardButton("💢𝐂𝐇𝐀𝐍𝐍𝐄𝐋💢", url=client.invitelink), 
+            InlineKeyboardButton("💢 𝐆𝐑𝐎𝐔𝐏  💢", url=client.invitelink2),
         ],
         [
-            InlineKeyboardButton("•ᴄʜᴀɴɴᴇʟ•", url=client.invitelink3), 
-            InlineKeyboardButton("•ɢʀᴜᴘ•", url=client.invitelink4),
+            InlineKeyboardButton("💢𝐂𝐇𝐀𝐍𝐍𝐄𝐋💢", url=client.invitelink3), 
+            InlineKeyboardButton("💢 𝐆𝐑𝐎𝐔𝐏 💢", url=client.invitelink4),
         ],
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text="🔅ᴄᴏʙᴀ ʟᴀɢɪ🔅",
+                    text="🔥 𝐂𝐎𝐁𝐀 𝐋𝐀𝐆𝐈 𝐓𝐎𝐓 🔥",
                     url=f"https://t.me/{client.username}?start={message.command[1]}",
                 )
             ]
